@@ -1,4 +1,7 @@
-public class Perso
+abstract public class Perso
 {
+    protected String mName;
+
+    abstract public void jump();
 
 }
