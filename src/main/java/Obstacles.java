@@ -1,4 +1,4 @@
-import java.util.random
+/**import java.util.random
 public class Obstacles {
         private int longueur;
         private int hauteur;
@@ -17,3 +17,4 @@ public class Obstacles {
             return hauteur;
         }
 }
+**/
