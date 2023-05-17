@@ -1,3 +1,4 @@
+
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -41,14 +42,14 @@ public class Main extends Application
 
             //décor:
             // --> "sol" à 20% de la hauteur de la fenêtre (en partant du bas)
-            ImageView background = new ImageView(new Image("data/Soir.png"));
+            ImageView background = new ImageView(new Image("Soir.png"));
             Affichage.configBackground(background, scene, root);
 
 
 
             //personnage:
             //résolution par défaut : 60*120 (soit 4.6875 % * 16.666666 %)
-            personnage = new ImageView(new Image("data/PersonnageT.png"));
+            personnage = new ImageView(new Image(""));
 
             HGX.set(0.1d);
             HGY.set(0.3d);

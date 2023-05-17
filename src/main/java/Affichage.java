@@ -1,3 +1,4 @@
+
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.When;
 import javafx.beans.property.SimpleDoubleProperty;
