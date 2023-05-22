@@ -1,4 +1,4 @@
-
+package com.example.projetinfov1;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -8,6 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import java.io.File;
 
 public class Main extends Application
 {
@@ -28,6 +29,9 @@ public class Main extends Application
     private static int timerSaut;
 
     private static double g = 0.002d;
+    public String pathPerso = new File("src/main/resources/Pictures/PersonnageT.png").getAbsolutePath();
+    public String pathSoir = new File("src/main/resources/Pictures/Soir.png").getAbsolutePath();
+
 
 
     @Override
@@ -42,14 +46,19 @@ public class Main extends Application
 
             //décor:
             // --> "sol" à 20% de la hauteur de la fenêtre (en partant du bas)
-            ImageView background = new ImageView(new Image("Soir.png"));
+
+            ImageView background = new ImageView(new Image(pathSoir));
+            //ImageView background = new ImageView();
+            //background.setImage(new Image(pathSoir));
             Affichage.configBackground(background, scene, root);
 
 
 
             //personnage:
             //résolution par défaut : 60*120 (soit 4.6875 % * 16.666666 %)
-            personnage = new ImageView(new Image(""));
+            personnage = new ImageView(new Image(pathPerso));
+            //ImageView personnage = new ImageView();
+            //personnage.setImage(new Image(pathPerso));
 
             HGX.set(0.1d);
             HGY.set(0.3d);

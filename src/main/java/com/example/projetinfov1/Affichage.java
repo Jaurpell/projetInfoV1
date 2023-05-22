@@ -1,4 +1,4 @@
-
+package com.example.projetinfov1;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.When;
 import javafx.beans.property.SimpleDoubleProperty;
