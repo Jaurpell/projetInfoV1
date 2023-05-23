@@ -175,6 +175,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.text.Font;
 import javafx.scene.control.Label;
+import java.io.File;
 
 
 public class Main extends Application
@@ -229,6 +230,9 @@ public class Main extends Application
 
     private static int Score;
     private static String newval;
+    public String pathPerso = new File("src/main/resources/Pictures/PersonnageT.png").getAbsolutePath();
+    public String pathSoir = new File("src/main/resources/Pictures/Soir.png").getAbsolutePath();
+    public String pathObstacle = new File("src/main/resources/Pictures/Obstalce.png").getAbsolutePath();
 
 
 
@@ -245,14 +249,14 @@ public class Main extends Application
 
             //décor:
             // --> "sol" à 20% de la hauteur de la fenêtre (en partant du bas)
-            ImageView background = new ImageView(new Image("C:\\Users\\theoz\\OneDrive - HESSO\\Documents\\HES-SO\\S2fb\\informatique\\Projet sans git\\Jeu_Theo\\src\\main\\java\\com\\example\\jeu_theo\\Soir.png"));
+            ImageView background = new ImageView(new Image(pathSoir));
             Affichage.configBackground(background, scene, root);
 
 
 
             //personnage:
             //résolution par défaut : 60*120 (soit 4.6875 % * 16.666666 %)
-            personnage = new ImageView(new Image("C:\\Users\\theoz\\OneDrive - HESSO\\Documents\\HES-SO\\S2fb\\informatique\\Projet sans git\\Jeu_Theo\\src\\main\\java\\com\\example\\jeu_theo\\PersonnageT.png"));
+            personnage = new ImageView(new Image(pathPerso));
 
             HGX.set(0.1d);
             HGY.set(0.3d);
@@ -263,7 +267,7 @@ public class Main extends Application
 
             //Obstacle:
             //résolution par défault :60*60 (soit 4.6875 % * 8.333333 %)
-            Obstacle = new ImageView(new Image("C:\\Users\\theoz\\OneDrive - HESSO\\Documents\\HES-SO\\S2fb\\informatique\\Projet sans git\\Jeu_Theo\\target\\classes\\com\\example\\jeu_theo\\Obstalce.png"));
+            Obstacle = new ImageView(new Image(pathObstacle));
             HGXO.set(0.9d);
             HGYO.set(0.71d);
 
