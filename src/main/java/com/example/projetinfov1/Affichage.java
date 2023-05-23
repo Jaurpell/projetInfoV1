@@ -35,5 +35,14 @@ public class Affichage extends Main
         iV.layoutYProperty().bind(background.fitHeightProperty().multiply(hGY));
 
     }
+    public static void configObstacle(ImageView iV, double LRatio, double HRatio, SimpleDoubleProperty hGXO, SimpleDoubleProperty hGYO)
+    {
+        iV.fitHeightProperty().bind(background.fitHeightProperty().multiply(HRatio));
+        iV.fitWidthProperty().bind(background.fitWidthProperty().multiply(LRatio));
+
+        iV.layoutXProperty().bind(background.fitWidthProperty().multiply(hGXO));
+        iV.layoutYProperty().bind(background.fitHeightProperty().multiply(hGYO));
+
+    }
 }
 
