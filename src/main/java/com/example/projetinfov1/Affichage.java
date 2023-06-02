@@ -10,11 +10,16 @@ public class Affichage extends Main
 {
     private static double RATIO = 16d/9d;
     private static ImageView background;
+    /**Group root = new Group();
+     Scene scene = new Scene(root,1280,720);**/
+
+
 
 
     public static void configBackground(ImageView iV, Scene s, Group g)
     {
         background = iV;
+
 
         When condition = Bindings.when((s.widthProperty().divide(s.heightProperty())).greaterThanOrEqualTo(RATIO));
         iV.fitWidthProperty().bind(condition.then(iV.fitHeightProperty().multiply(RATIO)).otherwise(s.widthProperty()));
@@ -24,6 +29,7 @@ public class Affichage extends Main
         g.layoutXProperty().bind((s.heightProperty().subtract(iV.fitHeightProperty())).divide(2));
 
     }
+
 
 
     public static void configurer(ImageView iV, double LRatio, double HRatio, SimpleDoubleProperty hGX, SimpleDoubleProperty hGY)
@@ -45,4 +51,3 @@ public class Affichage extends Main
 
     }
 }
-
