@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CACFD2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane layoutX="97.0" layoutY="59.0" prefHeight="267.0" prefWidth="416.0">
+         <items>
+            <AnchorPane prefHeight="271.0" prefWidth="399.0" style="-fx-background-color: #CACFD2;">
+               <children>
+                  <Button layoutX="-4.0" mnemonicParsing="false" prefHeight="270.0" prefWidth="199.0" text="Level 1" />
+                  <Button layoutX="207.0" mnemonicParsing="false" prefHeight="269.0" prefWidth="199.0" text="Level 2" />
+                  <ImageView fitHeight="269.0" fitWidth="200.0" layoutX="-1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LeJ.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="269.0" fitWidth="200.0" layoutX="207.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LeT.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="82.0" layoutY="15.0" text="level 1" textFill="#272370">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="289.0" layoutY="15.0" text="Level 2" textFill="#272370">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label alignment="TOP_CENTER" layoutX="226.0" layoutY="31.0" text="Choose your herro" textFill="#272370">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
