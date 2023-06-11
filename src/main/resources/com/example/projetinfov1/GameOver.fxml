@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
@@ -11,10 +10,10 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetinfov1.GameOverController">
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
    </top>
    <left>
       <AnchorPane prefHeight="300.0" prefWidth="100.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
@@ -23,9 +22,9 @@
       <AnchorPane prefHeight="300.0" prefWidth="100.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
    </right>
    <center>
-      <AnchorPane prefHeight="197.0" prefWidth="400.0" style="-fx-background-color: BF190A;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="360.0" prefWidth="800.0" style="-fx-background-color: #BF190A;" BorderPane.alignment="CENTER">
          <children>
-            <Label contentDisplay="CENTER" layoutX="112.0" layoutY="51.0" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: redBF190A;" text="YOU DIED NOOBY!!">
+            <Label contentDisplay="CENTER" layoutX="366.0" layoutY="102.0" prefHeight="62.0" prefWidth="374.0" text="YOU DIED NOOBY!!">
                <effect>
                   <Lighting>
                      <bumpInput>
@@ -37,24 +36,31 @@
                   </Lighting>
                </effect>
                <font>
-                  <Font name="Comic Sans MS Bold" size="18.0" />
+                  <Font name="Comic Sans MS Bold" size="36.0" />
                </font>
             </Label>
-            <Label layoutX="139.0" layoutY="83.0" text="go back fortnite">
+            <Label layoutX="400.0" layoutY="166.0" text="go back fortnite" style="-fx-alignment: center;">
                <font>
-                  <Font name="System Italic" size="18.0" />
+                  <Font name="Comic Sans MS Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="416.0" layoutY="380.0" text="Leaderboard" style="-fx-alignment: center; -fx-text-fill: white; -fx-underline: true;">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="36.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
    </center>
    <bottom>
-      <AnchorPane prefHeight="133.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="180.0" prefWidth="1280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
          <children>
-            <ListView id="ListePlayerView" layoutX="192.0" prefHeight="133.0" prefWidth="216.0" style="-fx-background-color: #CACFD2;" />
-            <TextField id="playerName" layoutX="22.0" layoutY="26.0" promptText="your name" style="-fx-background-color: #CACFD2;" />
-            <Button id="okButton" layoutX="22.0" layoutY="54.0" mnemonicParsing="false" style="-fx-background-color: #CACFD2;" text="ok" textFill="#be2b2b" />
+            <ListView fx:id="playerListView" layoutX="416.0" prefHeight="180.0" prefWidth="400.0" style="-fx-background-color: #CACFD2;" />
+
+            <TextField fx:id="playerNameTextField" layoutX="88.0" layoutY="39.0" prefWidth="192.0" promptText="your name" style="-fx-background-color: #CACFD2;" />
+            <Button fx:id="okButton" layoutX="88.0" layoutY="81.0" mnemonicParsing="false" prefWidth="192.0" style="-fx-background-color: #CACFD2;" text="ok" textFill="#be2b2b" />
          </children>
       </AnchorPane>
    </bottom>
 </BorderPane>
+
