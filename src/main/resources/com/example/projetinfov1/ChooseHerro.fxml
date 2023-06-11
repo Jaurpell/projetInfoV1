@@ -17,7 +17,7 @@
          <items>
             <AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #CACFD2;">
                <children>
-                  <Button  fx:id="ButLev1" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" prefHeight="540.0" prefWidth="480.0"  onAction="#mLev1">
+                  <Button  fx:id="level1Button" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" prefHeight="540.0" prefWidth="480.0"  onAction="#mLev1">
                      <graphic>
                         <ImageView fitWidth="480.0" fitHeight="540.0">
                            <image>
@@ -26,7 +26,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="ButLev2" layoutX="480.0" layoutY="0.0" mnemonicParsing="false" prefHeight="540.0" prefWidth="480.0" onAction="#mLev2">
+                  <Button fx:id="level2Button" layoutX="480.0" layoutY="0.0" mnemonicParsing="false" prefHeight="540.0" prefWidth="480.0" onAction="#mLev2">
                      <graphic>
                         <ImageView fitWidth="480.0" fitHeight="540.0">
                            <image>
