@@ -21,7 +21,7 @@
                      <graphic>
                         <ImageView fitWidth="480.0" fitHeight="540.0">
                            <image>
-                              <Image url="https://github.com/Jaurpell/projetInfoV1/blob/cc34c3e57e03306ecccee3f5bc439e131b492334/src/main/resources/Pictures/LeJ.png"/>
+                              <Image url="@../../../Pictures/LeJ.png"/>
                            </image>
                         </ImageView>
                      </graphic>
@@ -30,11 +30,12 @@
                      <graphic>
                         <ImageView fitWidth="480.0" fitHeight="540.0">
                            <image>
-                              <Image url="https://github.com/Jaurpell/projetInfoV1/blob/cc34c3e57e03306ecccee3f5bc439e131b492334/src/main/resources/Pictures/LeT.png"/>
+                              <Image url="@../../../Pictures/LeT.png"/>
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
+
 
                   <Label layoutX="192.0" layoutY="36.0" text="Level 1" textFill="#272370">
                      <font>
