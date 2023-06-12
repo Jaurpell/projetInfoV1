@@ -37,18 +37,20 @@ public class ChooseHerroController extends Main {
     @FXML
     public static Button level2Button;
     public static int score = 0;
-    private boolean isLevel1Selected = true;
+    public static boolean isLevel1Selected = true;
 
     @FXML
-    protected void mLev1() {
+    public boolean mLev1() {
         isLevel1Selected = true;
         startGame();
+        return isLevel1Selected;
     }
 
     @FXML
-    protected void mLev2() {
+    public boolean mLev2() {
         isLevel1Selected = false;
         startGame();
+        return isLevel1Selected;
     }
 
     private void startGame() {
@@ -117,8 +119,8 @@ public class ChooseHerroController extends Main {
                             affScore.setText("SCORE :" + newval);
 
                             Random random = new Random();
-                            int index = random.nextInt(Obstacle.listObst.length);
-                            ImageView obstacle = new ImageView(Obstacle.mObstacle().getImage());
+                            random.nextInt(Obstacle.listObst.length);
+                            obstacle.setImage(Obstacle.mObstacle().getImage());
                         }
                     }
                     if (collision) {

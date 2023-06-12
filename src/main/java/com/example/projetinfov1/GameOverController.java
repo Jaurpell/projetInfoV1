@@ -1,25 +1,16 @@
 package com.example.projetinfov1;
 
-
-
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 import java.util.Comparator;
 import java.util.List;
-
-import java.io.*;
-
-
-
 import java.util.ArrayList;
-
+import java.io.*;
 
 public class GameOverController extends Main {
     public static int GameOverScore;
@@ -32,15 +23,14 @@ public class GameOverController extends Main {
     @FXML
     private Button okButton;
 
-
     private ObservableList<String> players;
-
+    public static boolean selected;
 
     @FXML
     public void initialize() {
+        selected = ChooseHerroController.isLevel1Selected;
         players = FXCollections.observableArrayList();
         playerListView.setItems(players);
-
         loadDataFromFile();
         sortPlayerList(); // Tri des joueurs dans l'ordre décroissant des scores
         okButton.setOnAction(event -> addPlayerToList());
@@ -48,7 +38,6 @@ public class GameOverController extends Main {
 
     private void addPlayerToList() {
         String playerName = playerNameTextField.getText().trim();
-
         if (!playerName.isEmpty()) {
             int score = generateRandomScore(); // Remplacez cette ligne avec votre propre logique de score
             String playerInfo = playerName + " - Score: " + score;
@@ -124,19 +113,16 @@ public class GameOverController extends Main {
     }
 
     private void saveDataToFile() {
-        try {
-            // Créez un objet File avec le chemin du fichier de sauvegarde
-            File file = new File("scores.txt");
+        String fileName = selected ? "scores.txt" : "scores2.txt";
 
-            // Créez un objet FileWriter pour écrire dans le fichier
+        try {
+            File file = new File(fileName);
             FileWriter writer = new FileWriter(file);
 
-            // Parcourez la liste des joueurs et écrivez les valeurs dans le fichier
             for (String player : players) {
                 writer.write(player + System.lineSeparator());
             }
 
-            // Fermez le FileWriter
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -144,38 +130,29 @@ public class GameOverController extends Main {
     }
 
     private void loadDataFromFile() {
+        String fileName = selected ? "scores.txt" : "scores2.txt";
+
         try {
-            // Créez un objet File avec le chemin du fichier de sauvegarde
-            File file = new File("scores.txt");
+            File file = new File(fileName);
 
-            // Vérifiez si le fichier existe
             if (file.exists()) {
-                // Créez un objet FileReader pour lire à partir du fichier
                 FileReader reader = new FileReader(file);
-
-                // Créez un objet BufferedReader pour lire les lignes du fichier
                 BufferedReader bufferedReader = new BufferedReader(reader);
 
                 String line;
                 List<String> playerList = new ArrayList<>();
 
-                // Lisez chaque ligne du fichier
                 while ((line = bufferedReader.readLine()) != null) {
                     playerList.add(line);
                 }
 
-                // Fermez le FileReader et BufferedReader
                 bufferedReader.close();
                 reader.close();
 
-                // Vérifiez si le nombre de joueurs est inférieur à 5
                 if (playerList.size() <= 5) {
                     players.addAll(playerList);
                 } else {
-                    // Triez les joueurs en fonction de leur score
                     playerList.sort(new PlayerComparator());
-
-                    // Ajoutez les 5 meilleurs joueurs à la liste
                     players.addAll(playerList.subList(0, 5));
                 }
             }
