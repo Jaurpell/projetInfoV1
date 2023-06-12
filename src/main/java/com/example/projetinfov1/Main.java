@@ -69,21 +69,6 @@ public class Main extends Application {
 
             // Écrivez les données de jeu dans le fichier
             writer.write(GameOverController.GameOverScore + System.lineSeparator());
-            writer.write(vitesseY + System.lineSeparator());
-            writer.write(timerSaut + System.lineSeparator());
-            writer.write(saut + System.lineSeparator());
-
-            for (boolean b : new boolean[]{collision, Start, restart})
-            {
-                writer.write(b + System.lineSeparator());
-            }
-            writer.write(vitesseX + System.lineSeparator());
-            writer.write(XPix + System.lineSeparator());
-            writer.write(YPix + System.lineSeparator());
-            writer.write(vitesseYP + System.lineSeparator());
-            writer.write(vitesseXP + System.lineSeparator());
-            writer.write(XOPix + System.lineSeparator());
-            writer.write(YOPix + System.lineSeparator());
 
             // Fermez le FileWriter
             writer.close();

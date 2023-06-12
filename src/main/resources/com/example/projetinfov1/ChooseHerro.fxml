@@ -17,11 +17,11 @@
          <items>
             <AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #CACFD2;">
                <children>
-                  <Button  fx:id="level1Button" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" prefHeight="540.0" prefWidth="480.0"  onAction="#mLev1">
+                  <Button fx:id="level1Button" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" prefHeight="540.0" prefWidth="480.0" onAction="#mLev1">
                      <graphic>
                         <ImageView fitWidth="480.0" fitHeight="540.0">
                            <image>
-                              <Image url="C:\Users\theoz\OneDrive - HESSO\Documents\HES-SO\S2fb\informatique\Projet sans git\depZeroJeu\src\main\resources\Images\LeJ.jpg"/>
+                              <Image url="https://github.com/Jaurpell/projetInfoV1/blob/cc34c3e57e03306ecccee3f5bc439e131b492334/src/main/resources/Pictures/LeJ.png"/>
                            </image>
                         </ImageView>
                      </graphic>
@@ -30,11 +30,12 @@
                      <graphic>
                         <ImageView fitWidth="480.0" fitHeight="540.0">
                            <image>
-                              <Image url="C:\Users\theoz\OneDrive - HESSO\Documents\HES-SO\S2fb\informatique\Projet sans git\depZeroJeu\src\main\resources\Images\LeT.jpg"/>
+                              <Image url="https://github.com/Jaurpell/projetInfoV1/blob/cc34c3e57e03306ecccee3f5bc439e131b492334/src/main/resources/Pictures/LeT.png"/>
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
+
                   <Label layoutX="192.0" layoutY="36.0" text="Level 1" textFill="#272370">
                      <font>
                         <Font size="28.0" />

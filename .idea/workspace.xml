@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="450de946-3c68-4024-a895-db27cc2d51b8" name="Changes" comment="theo_1003">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamedata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gamedata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scores2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scores2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetinfov1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetinfov1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projetinfov1/ChooseHerro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projetinfov1/ChooseHerro.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/theoz/OneDrive - HESSO/Documents/HES-SO/S2fb/informatique/projetInfoV1/src/main/resources/Pictures",
+    "last_opened_file_path": "C:/Users/theoz/OneDrive - HESSO/Documents/HES-SO/S2fb/informatique/Projet sans git/bcpFenetre",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +82,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\theoz\OneDrive - HESSO\Documents\HES-SO\S2fb\informatique\projetInfoV1\src\main\resources\Pictures" />
       <recent name="C:\Users\theoz\OneDrive - HESSO\Documents\HES-SO\S2fb\informatique\projetInfoV1\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\theoz\OneDrive - HESSO\Documents\HES-SO\S2fb\informatique\projetInfoV1\src\main\resources\Pictures" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -112,7 +119,8 @@
       <workItem from="1686520847986" duration="251000" />
       <workItem from="1686559089946" duration="1291000" />
       <workItem from="1686563045862" duration="779000" />
-      <workItem from="1686568909902" duration="701000" />
+      <workItem from="1686568909902" duration="1458000" />
+      <workItem from="1686571723933" duration="2317000" />
     </task>
     <task id="LOCAL-00001" summary="Test Théo">
       <created>1683028739556</created>
@@ -212,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686569287415</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="theo_1003">
+      <created>1686569798200</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686569798200</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
