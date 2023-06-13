@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class AffichageGameOver extends Main
 {
+    //Cela nous permet d'afficher la fnêtre Game Over en cas de collision
     public static void afficherFenetreCollision() {
         try {
             FXMLLoader loader = new FXMLLoader(AffichageGameOver.class.getResource("GameOver.fxml"));
